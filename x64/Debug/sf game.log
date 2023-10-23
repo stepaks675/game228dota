@@ -1,0 +1,19 @@
+﻿  main.cpp
+C:\Users\stepaks\source\repos\sf game\main.cpp(22,27): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\stepaks\source\repos\sf game\main.cpp(22,24): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\stepaks\source\repos\sf game\main.cpp(43,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\stepaks\source\repos\sf game\main.cpp(54,26): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\stepaks\source\repos\sf game\main.cpp(54,20): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\stepaks\source\repos\sf game\main.cpp(70,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\stepaks\source\repos\sf game\main.cpp(70,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\stepaks\source\repos\sf game\main.cpp(66,21): warning C4930: ShadowFiend sfchik(void): функция с прототипом не вызвана (предполагалось определение переменной?)
+C:\Users\stepaks\source\repos\sf game\main.cpp(67,21): warning C4930: ShadowFiend sfchik1(void): функция с прототипом не вызвана (предполагалось определение переменной?)
+  sf game.vcxproj -> C:\Users\stepaks\source\repos\sf game\x64\Debug\sf game.exe
