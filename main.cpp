@@ -13,9 +13,19 @@ class ShadowFiend;
 vector <ShadowFiend*> allsf;
 
 class ShadowFiend {
+public:
+    Clock sfclock;
+    float Timer = 0;
     Sound ult;
     Sprite sfs;
     Vector2f pos;
+    void zxc() {
+        Timer = sfclock.getElapsedTime().asSeconds();
+        if (Timer >= 2.3) {
+            ult.stop();
+
+        }
+    }
     ShadowFiend() {
         int x = (rand() % 1000) + 100;
         int y = (rand() % 550) + 50;
@@ -25,7 +35,8 @@ class ShadowFiend {
         sfs.setScale(0.5, 0.5);
         allsf.push_back(this);
         ult.setBuffer(sfult1);
-
+        ult.play();
+        sfclock.restart();
     }
     ~ShadowFiend() {
 
@@ -60,12 +71,11 @@ int main()
 
     RenderWindow window(sf::VideoMode(1200, 630), "SFML works!");
     window.setMouseCursorVisible(false);
-
+    ShadowFiend* sf1 = new ShadowFiend();
+    
     while (window.isOpen())
     {
-        ShadowFiend sfchik();
-        ShadowFiend sfchik1();
-        ko.play();
+        
         m = Mouse::getPosition(window);
         cross.setPosition(m.x - 40, m.y - 40);
         window.setSize(Vector2u(1200,630));
